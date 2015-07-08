@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'RE-API'
+    version =  '1.0.0'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
